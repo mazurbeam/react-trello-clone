@@ -8,13 +8,7 @@ const Home = (props: { boards: Array<any> }) => {
   return (
     <div className="home">
       <Header />
-      <Boards />
-      <div>
-        {props.boards.map(board => {
-          board.name;
-        })}
-      </div>
-      <p>{props.boards}</p>
+      <Boards boards={props.boards} />
     </div>
   );
 };

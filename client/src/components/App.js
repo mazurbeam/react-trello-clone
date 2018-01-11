@@ -11,7 +11,11 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route
+              exact
+              path='/'
+              component={props => <Home boards={preload.boards} />}
+            />
           </Switch>
         </div>
       </Router>

@@ -1,0 +1,30 @@
+{
+  "boards": [
+    {
+      "_id": "1",
+      "name": "Daily Schedule"
+    },
+    {
+      "_id": "2",
+      "name": "My Projects"
+    },
+    {
+      "_id": "3",
+      "name": "Stuff"
+    }
+  ],
+  "lists": [
+    {
+      "boardId": "1",
+      "header": "Monday",
+      "cards": [
+        {
+          "name": "wake up"
+        },
+        {
+          "name": "drink coffee"
+        }
+      ]
+    }
+  ]
+}

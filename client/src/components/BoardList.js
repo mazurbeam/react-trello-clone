@@ -2,6 +2,7 @@
 
 import React from "react";
 import Board from "./Board";
+import CreateBoard from "./CreateBoard";
 import { Grid, Col, Row } from "react-bootstrap";
 
 const BoardList = (props: { boards: Array<any> }) => {
@@ -15,7 +16,7 @@ const BoardList = (props: { boards: Array<any> }) => {
           </Col>
         ))}
         <Col xs={6} md={4}>
-          <p>Create new board</p>
+          <CreateBoard />
         </Col>
       </Grid>
     </div>

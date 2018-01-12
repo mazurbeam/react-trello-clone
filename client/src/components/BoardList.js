@@ -15,6 +15,9 @@ const BoardList = (props: { boards: Array<any> }) => {
             <Board key={board._id} {...board} />
           </Col>
         ))}
+        <Col xs={6} md={4}>
+          <p>Create new board</p>
+        </Col>
       </Grid>
     </div>
   );

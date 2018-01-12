@@ -7,7 +7,7 @@ import Header from "./Header";
 const Home = (props: { boards: Array<any> }) => {
   return (
     <div className="home">
-      <Header title="Trello Clone Homepage" />
+      <Header title="Boards" />
       <BoardList boards={props.boards} />
     </div>
   );

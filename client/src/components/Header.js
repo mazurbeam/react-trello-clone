@@ -9,7 +9,7 @@ const Header = ({ showBackNav, title }) => {
   }
   return (
     <PageHeader className='header'>
-      <h1>{title}</h1>
+      {title}
       {utilSpace}
     </PageHeader>
   )

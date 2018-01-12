@@ -14,8 +14,8 @@ class BoardDetails extends Component {
         <Header showBackNav title={board.name} />
         <Grid>
           {lists.map(list => (
-            <Col xs={6} md={4}>
-              <List key={list._id} {...list} />
+            <Col key={list._id} xs={6} md={4}>
+              <List {...list} />
             </Col>
           ))}
         </Grid>

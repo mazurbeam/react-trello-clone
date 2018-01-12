@@ -5,14 +5,13 @@ import Board from "./Board";
 import { Grid, Col, Row } from "react-bootstrap";
 
 const BoardList = (props: { boards: Array<any> }) => {
-  console.log(props.boards);
+  // console.log(props.boards);
   return (
-    <div>
-      <h1>Boards</h1>
+    <div className="board-list">
       <Grid>
         {props.boards.map(board => (
-          <Col xs={6} md={4}>
-            <Board key={board._id} {...board} />
+          <Col key={board._id} xs={6} md={4}>
+            <Board {...board} />
           </Col>
         ))}
         <Col xs={6} md={4}>

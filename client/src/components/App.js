@@ -32,7 +32,18 @@ class App extends Component {
                 const selectedBoard = this.state.boards.find(
                   board => props.match.params.id === board._id
                 )
-                return <BoardDetails board={selectedBoard} />
+                const selectedBoardLists = [
+                  preload.lists.find(
+                    list => props.match.params.id === list.boardId
+                  )
+                ]
+                console.log(selectedBoardLists)
+                return (
+                  <BoardDetails
+                    board={selectedBoard}
+                    lists={selectedBoardLists}
+                  />
+                )
               }}
             />
           </Switch>

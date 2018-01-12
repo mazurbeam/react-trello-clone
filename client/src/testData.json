@@ -15,6 +15,7 @@
   ],
   "lists": [
     {
+      "_id": "1",
       "boardId": "1",
       "header": "Monday",
       "cards": [

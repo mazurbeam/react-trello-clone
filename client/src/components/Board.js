@@ -9,7 +9,9 @@ const Board = (props: { _id: string, name: string }) => {
   console.log("from board", props._id);
   return (
     <Panel className="board">
-      <Link to={`/b/${props._id}`}>{props.name}</Link>
+      <Link to={`/b/${props._id}`}>
+        <Panel.Heading>{props.name}</Panel.Heading>
+      </Link>
     </Panel>
   );
 };

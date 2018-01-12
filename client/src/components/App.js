@@ -6,7 +6,16 @@ import Home from './Home.js'
 import preload from '../testData.json'
 
 class App extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      boards: preload.boards
+    }
+  }
+
   render () {
+    console.log(this.state)
     return (
       <Router>
         <div className='App'>
@@ -14,7 +23,7 @@ class App extends Component {
             <Route
               exact
               path='/'
-              component={props => <Home boards={preload.boards} />}
+              component={props => <Home boards={this.state.boards} />}
             />
           </Switch>
         </div>

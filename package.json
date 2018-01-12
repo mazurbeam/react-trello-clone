@@ -21,7 +21,9 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "global": "^4.3.2",
     "mongoose": "^4.13.9",
+    "nodemon": "^1.14.11",
     "path": "^0.12.7"
   }
 }

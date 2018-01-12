@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/final', { useMongoClient: true })
+mongoose.connect('mongodb://localhost/trello-clone', { useMongoClient: true })
 
 const models_path = path.join(__dirname, './../models')
 
